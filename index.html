@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <div>
+        
+        <nav class="nav">
+            <div class="nav-bar">
+            <button class="menu" id="menuToggle">☰</button>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+           <img src="./assests/Phone.png" alt="Phone-icon" class="icon-phone">
+           <img src="./assests/Cart.png" alt="Cart-icon" class="icon-cart">
+        </div>
+        </nav>
+        <div class="side">
+            <ul class="sidebar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="home-content">
+            <img src="./assests/img1.jpg" alt="Food" class="home-img">
+            <div class="home-content-div">
+                <h2>LOREM IPSUM</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="order-title">Order Now</h2>
+            <div class="card-container">
+            <div class="card">
+                <img src="./assests/img4.jpg" alt="Burger" class="product-img">
+                <h2>BURGER</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="card">
+                <img src="./assests/img2.jpg" alt="Burger" class="product-img">
+                <h2>PIZZA</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="card">
+                <img src="./assests/img3.jpg" alt="Burger" class="product-img">
+                <h2>PASTA</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+        <div class="button">
+            <button>Order</button>
+        </div>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector(".menu");
+        const menulist = document.querySelector(".side")
+        menu.addEventListener('click', ()=>{
+            menulist.classList.toggle('showmenu')
+        })
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FF70BB, #FFD75F);
+    background-repeat: no-repeat;
+}
+.menu{
+    display: none;
+}
+.nav-list a{
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 20px;
+    background: white;
+    display: fixed; 
+    gap: 150px;
+ 
+}
+.icon-cart{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    background: white;
+    padding-right: 30px;
+}
+.icon-phone{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background: white;
+}
+.nav-list{
+    display: flex;
+    gap: 80px;
+    background: white;
+    padding: 15px;
+}
+.nav-list li{
+  list-style-type: none;
+  background: white;
+  font-size: 23px;
+  letter-spacing: 2.5px;
+  font-weight: 549;
+
+}
+.icon{
+    background: white;
+
+}
+.home-img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: 15% 30%;
+}
+.home-content{
+    position: relative;
+}
+.home-content-div{
+    position: absolute;
+    width: 620px;
+    height: 200px;
+    top: 27%;
+    left: 6%;
+    padding: 25px;
+    font-family: sans-serif;
+    color: white;
+    background: #f06e6c93;
+}
+.home-content-div h2, p {
+    background: transparent;
+    letter-spacing: 1.5px;
+    max-width: 80%;
+    line-height: 25px;
+    padding: 25px 25px 10px 25px;
+    font-size: 16px;
+}
+.home-content-div h2{
+    font-size: 50px;
+  
+
+}
+.order-title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    margin-top: 90px;
+
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    gap: 120px;
+    margin: 50px 0;
+    background: transparent;
+
+}
+
+.card{
+    background: white;
+    width: 310px;
+    height: auto;
+    border-radius: 0 50px 0 50px;
+}
+.product-img{
+   width: 85%;
+    height: 270px;
+    object-fit: cover;
+    padding: 20px;
+    background: transparent;
+    border-radius: 0 50px 0 0;
+}
+.card h2{
+    background: transparent;
+}
+.card p{
+    background: transparent;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px 20px 20px 37px;
+   
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    width: 180px;
+    height: 60px;
+    border-radius: 40px;
+    background: #FFC3BE;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 90px;
+}
+.side{
+    display: none;
+}
+
+
+@media (max-width: 1300px) {
+
+    .nav {
+        gap: 40px;
+        font-size: 15px;        
+    }
+    .nav-list{
+ 
+        gap: 40px;
+     
+
+    }
+    .card-container{       
+        gap: 80px;
+        margin: 50px 80px;
+    
+    }
+    
+}
+@media (max-width: 1210px) {
+
+ 
+    .card-container{       
+        gap: 50px;
+        margin: 40px 80px;
+    
+    }
+    .home-content-div{
+   
+        width: 580px;
+      
+    }
+    
+}
+@media (max-width: 1130px) {
+    .product-img{
+   
+         height: 250px;
+       
+     }
+     .card p{
+  
+        font-size: 13px;
+
+       
+    }
+    
+}
+@media (max-width: 1060px) {
+    .nav {
+        gap: 30px;
+        font-size: 10px;        
+    }
+    .nav-list{
+ 
+        gap: 30px;
+     
+
+    }
+    .card-container{       
+        gap: 40px;
+        margin: 40px 80px;
+    
+    }
+    .home-content-div{
+        
+        width: 500px;
+        
+    }
+    .home-content-div  p {
+        font-size: 14px;
+    }
+    .home-content-div h2 {
+        font-size: 44px;
+    }
+    .product-img{
+   
+        height: 200px;
+      
+    }
+}
+@media (max-width: 930px) {
+    .nav {
+        gap: 20px;          
+    }
+    .nav-list li{
+ 
+        gap: 20px;
+        font-size: 15px;
+    }
+    .card-container{       
+        gap: 40px;
+        margin: 40px 40px;
+    
+    }
+    .home-content-div{
+        
+        width: 400px;
+        
+    }
+    .home-content-div  p {
+        font-size: 13px;
+    }
+    .home-content-div h2 {
+        font-size: 30px;
+        margin-bottom: -15px;
+    }
+    .product-img{
+   
+        height: 200px;
+      
+    }
+    .icon-cart{
+        width: 25px;
+        height: 25px;
+   
+    }
+    .icon-phone{
+        width: 35px;
+        height: 35px;
+    
+    }
+}
+@media (max-width: 800px) {
+
+    .card-container{
+        flex-wrap: wrap;
+        
+    }
+    .card{       
+        width: 270px;
+        height: 410px;
+    }
+    .product-img{
+        width: 85%;
+         height: 240px;
+   
+     }
+}
+
+@media (max-width: 735px) {
+    
+    .icon-cart{
+        width: 20px;
+        height: 20px;
+       
+    }
+    .icon-phone{
+        width: 30px;
+        height: 30px;
+    
+    }
+    .nav-list li{
+        font-size: 12px;       
+      }
+      .home-img{
+        object-position: 35% 30%;
+    }
+}
+@media (max-width: 650px) {
+    .nav-list{
+       display: none
+        
+    }  
+    .side{
+        background: white;
+    }
+    .side ul li{
+        display: none;
+        background: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: 549;
+        font-size: 20px;
+    }
+    .side ul li a{
+        background: white;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+    .side ul li, .showmenu{
+        display: block;
+        
+    }
+ 
+     
+    .home-img{
+        object-position:  40% 10%;
+        height: 60vh;    }
+    .menu{
+        display: inline-flex;
+        background: white;
+        border: none;
+    }
+    .order-title{
+        font-size: 40px;
+    }
+    .nav{
+        gap: 400px
+    }
+    .home-content-div{
+        width: 250px;
+        height: 110px;
+    }
+    .home-content-div h2{
+      font-size: 20px;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    .home-content-div p{
+        font-size: 10px;
+        line-height: 15px;
+        max-width: 100%;
+        padding: 5px;
+   
+      
+      }
+
+}
+@media (max-width: 495px) {
+    .nav-list{
+        display: none;
+    }
+    .home-img{
+        object-fit: cover;
+        object-position:  40% 10%;
+        height: 35vh;
+    }
+    .menu{
+        display: inline-flex;
+        background: white;
+        border: none;
+    }
+    .nav{
+        gap: 290px
+    }
+    .home-content-div{
+        width: 270px;
+        height: 100px;
+    }
+    .home-content-div h2{
+      font-size: 15px;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    .home-content-div p{
+        font-size: 10px;
+        line-height: 15px;
+        max-width: 100%;
+        padding: 5px;
+   
+      
+      }
+      .icon-cart{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+     
+    }
+    .icon-phone{
+        width: 26px;
+        height: 26px;
+
+    }
+    .order-title{
+        font-size: 30px;
+        margin-top: 45px;
+    }
+
+}
+@media (max-width: 385px) {
+
+    .icon-cart{
+        width: 18px;
+        height: 18px;
+    }
+    .icon-phone{
+        width: 25px;
+        height: 25px;
+    }
+    .icon{
+        display: inline-flex;
+        align-items: center;
+    }
+    .nav{
+        gap: 250px;
+    }
+    .home-img{
+        object-fit: cover;
+        object-position:  10% 20%;
+        height: 40vh;
+
+    }
+    .order-title{
+        margin-top: 35px;
+    }
+   .home-content-div{
+    width: 200px;
+   }
+   .home-content-div p{
+        font-size: 8px;
+        line-height: 13px;
+        margin-top: -10px;
+   }
+}
+@media (max-width: 335px) {
+
+    .nav{
+        gap: 180px;
+    }
+    .home-img{
+        object-fit: cover;
+        object-position:  10% 20%;
+        height: 30vh;
+
+    }
+    .order-title{
+        margin-top: 35px;
+    }
+   .home-content-div{
+    width: 200px;
+    height: 55px;
+   }
+   .home-content-div p{
+        font-size: 6px;
+        line-height: 10px;
+        margin-top: -10px;
+   }
+   .card{
+    width: 280px;
+    height: auto;
+
+}
+.product-img{
+     height: 200px;
+    
+ }
+}
